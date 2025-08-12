@@ -30,7 +30,7 @@ rl.on('close', () => {
                 let leftDown =  arrays[x][y] + (arrays[x+1]?.[y-1]) + (arrays[x+2]?.[y-2]) + (arrays[x+3]?.[y-3]);
 
                 task1Sum +=
-                    (left === 'XMAS') +
+                    (left === 'XMAS') + // true = 1, false = 0
                     (leftUp === 'XMAS') +
                     (up === 'XMAS') +
                     (rightUp === 'XMAS') +
