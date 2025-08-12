@@ -22,11 +22,11 @@ rl.on('close', () => {
             if (arrays[x][y] === 'X') {
                 let left =      arrays[x][y] + (arrays[x][y-1])     + (arrays[x][y-2])     + (arrays[x][y-3]);
                 let leftUp =    arrays[x][y] + (arrays[x-1]?.[y-1]) + (arrays[x-2]?.[y-2]) + (arrays[x-3]?.[y-3]);
-                let up =        arrays[x][y] + (arrays[x-1]?.[y]  ) + (arrays[x-2]?.[y]  ) + (arrays[x-3]?.[y]  );
+                let up =        arrays[x][y] + (arrays[x-1]?.[y])   + (arrays[x-2]?.[y])   + (arrays[x-3]?.[y]);
                 let rightUp =   arrays[x][y] + (arrays[x-1]?.[y+1]) + (arrays[x-2]?.[y+2]) + (arrays[x-3]?.[y+3]);
-                let right =     arrays[x][y] + (arrays[x][y+1]    ) + (arrays[x][y+2]    ) + (arrays[x][y+3]    );
+                let right =     arrays[x][y] + (arrays[x][y+1])     + (arrays[x][y+2])     + (arrays[x][y+3]);
                 let rightDown = arrays[x][y] + (arrays[x+1]?.[y+1]) + (arrays[x+2]?.[y+2]) + (arrays[x+3]?.[y+3]);
-                let down =      arrays[x][y] + (arrays[x+1]?.[y]  ) + (arrays[x+2]?.[y]  ) + (arrays[x+3]?.[y]  );
+                let down =      arrays[x][y] + (arrays[x+1]?.[y])   + (arrays[x+2]?.[y])   + (arrays[x+3]?.[y]);
                 let leftDown =  arrays[x][y] + (arrays[x+1]?.[y-1]) + (arrays[x+2]?.[y-2]) + (arrays[x+3]?.[y-3]);
 
                 task1Sum +=
