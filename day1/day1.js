@@ -1,7 +1,7 @@
 import { createReadStream } from 'fs';
 import { createInterface } from 'readline';
 
-const fileStream = createReadStream('day1.txt');
+const fileStream = createReadStream('./day1/day1.txt');
 const rl = createInterface({
     input: fileStream,
     crlfDelay: Infinity
