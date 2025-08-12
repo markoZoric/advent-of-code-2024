@@ -25,7 +25,7 @@ rl.on('line', line => {
         }
 
         let nums = regexMatch.match(digitRegEx);
-        if(nums && nums.length && mulEnabled) {
+        if (nums && nums.length && mulEnabled) {
             let baseNum = nums[0];
             let multiplier = nums[1];
             mulSum += baseNum * multiplier;
